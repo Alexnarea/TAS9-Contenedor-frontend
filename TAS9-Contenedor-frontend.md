@@ -44,9 +44,10 @@ El estudiante debe conocer:
 
 - Contenerizar la aplicación frontend mediante un Dockerfile.
 - Contenerizar la aplicación backend mediante un Dockerfile.
+- Crear un docker-compose
 - Gestionar variables de entorno mediante archivo .env.
-- Verificar la conexión del backend con PostgreSQL.
-- Validar la conexión desde pgAdmin al servicio de base de datos.
+- Verificar que el frontend consuma correctamente la API del backend.
+- Validar la conexión y migración automática de la base de datos.
 
 
 ## 6. Equipo necesario
@@ -59,7 +60,6 @@ El estudiante debe conocer:
 
 - Documentación oficial de Docker.
 - Cheatsheet de comandos Docker.
-- Repositorio de la práctica.
 - Videos tutoriales.
 - Guía de asignatura.
 
@@ -67,41 +67,35 @@ El estudiante debe conocer:
 
 ### Pasos 
 
-1. Clona el repositorio del proyecto backend.
+1. Crear el Dockerfile para el backend.
 
-Figura 8-1 Clonacion del repositorio backend.
+Figura 8-1 Creacion del Dockerfile en spring boot.
 
 <img src="./back/c1.PNG" alt="contenedor react docker" width="500"/>
 
-2. Crear archivo .env con las variables necesarias para la configuración.
+2.  Crear el Dockerfile para el frontend.
 
-Figura 8-2 Variables de entorno definidas.
+Figura 8-2 Creacion del Dockerfile en React.
 
 <img src="./back/c2.PNG" alt="contenedor react docker" width="500"/>
 
-3.Crear el archivo Dockerfile con técnica de multi-stage build.
+3.Crear el archivo .env.
 
-Figura 8-3 Dockerfile multi-stage.
+Figura 8-3 Creacion del archivo .env para variables de entorno .
 
 <img src="./back/c3.PNG" alt="contenedor react docker" width="500"/>
 
-4. Configurar docker-compose.yml para los servicios backend, PostgreSQL y pgAdmin.
+4. Crear el archivo docker-compose.yml para orquestar los contenedores.
 
 Figura 8-4 Estructura de docker-compose.
 
 <img src="./back/c4.PNG" alt="contenedor react docker" width="500"/>
 
-5. Levantar los servicios con docker-compose up --build -d y verificar su ejecución.
-
-Figura 8-5 Backend corriendo y Flyway ejecutando migraciones.
+5. Ejecutar los contenedores 
+Figura 8-5 Ejecucion de los contenedores.
 
 <img src="./back/c5.PNG" alt="contenedor react docker" width="500"/>
 
-6. Acceder a pgAdmin y conectar con PostgreSQL correctamente.
-
-Figura 8-6 Conexión desde pgAdmin al servicio de PostgreSQL.
-
-<img src="./back/c6.PNG" alt="contenedor react docker" width="500"/>
 
 ## 9. Resultados esperados
 
