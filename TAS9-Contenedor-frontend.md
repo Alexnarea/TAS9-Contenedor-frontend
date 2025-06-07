@@ -1,7 +1,6 @@
-# TAS8 - Despliegue backend con base datos local
+# TAS9 - Contenedor frontend
 ## 1. Título  
-Contenerización de una Aplicación Backend con PostgreSQL y pgAdmin utilizando Docker y Multi-stage Build
-
+Contenerización de una Aplicación Frontend
 ## 2. Tiempo de duración  
 El tiempo fue de 200 minutos. 
 
@@ -32,18 +31,19 @@ Para lenguajes compilados, como C, Go o Rust, las compilaciones multietapa permi
 ## 4. Conocimientos previos
 
 El estudiante debe conocer:
-- Fundamentos de Sping Boot.
+- Fundamentos de Spring Boot.
 - Comandos básicos de Docker.
 - Lectura y escritura de archivos `Dockerfile`.
 - Uso de entornos .env para variables de configuración.
-- Conceptos básicos de bases de datos relacionales y PostgreSQL.
+- Fundamentos de React.
+- Comunicación entre contenedores en Docker.
+- Conceptos básicos de redes en Docker Compose.
 
 
 ## 5. Objetivos a alcanzar
 
+- Contenerizar la aplicación frontend mediante un Dockerfile.
 - Contenerizar la aplicación backend mediante un Dockerfile.
-- Implementar multi-stage build para optimizar la imagen.
-- Configurar los servicios de base de datos y cliente (pgAdmin) en docker-compose.yml.
 - Gestionar variables de entorno mediante archivo .env.
 - Verificar la conexión del backend con PostgreSQL.
 - Validar la conexión desde pgAdmin al servicio de base de datos.
