@@ -99,12 +99,16 @@ Figura 8-5 Ejecucion de los contenedores.
 
 ## 9. Resultados esperados
 
-Al finalizar la práctica, se cumplió exitosamente con todos los objetivos propuestos. La aplicación backend fue contenerizada correctamente utilizando un Dockerfile con multi-stage build. Se creó una imagen liviana y optimizada que fue ejecutada mediante docker-compose, junto con una base de datos PostgreSQL y la herramienta de administración pgAdmin. Durante el proceso se verificó:
-- La conexión entre la aplicación y la base de datos PostgreSQL mediante logs de Spring Boot.
-- La ejecución automática de migraciones con Flyway.
-- La exposición de puertos y correcta ejecución en segundo plano.
-- La conexión a la base de datos desde pgAdmin, confirmando la persistencia y la comunicación en red entre los servicios.
-Todo el proceso fue acompañado de capturas que evidencian los pasos seguidos, desde la clonación del repositorio hasta la verificación de la aplicación corriendo dentro del contenedor.
+Al finalizar la práctica, se cumplieron exitosamente todos los objetivos planteados. La aplicación completa, compuesta por un frontend desarrollado en React y un backend en Spring Boot, fue contenerizada mediante Docker. Los servicios se orquestaron mediante un archivo docker-compose.yml, permitiendo el despliegue conjunto del frontend y backend como contenedores independientes. La base de datos fue gestionada externamente mediante Neon, una plataforma de PostgreSQL en la nube, eliminando la necesidad de levantar un contenedor local de base de datos o herramientas como pgAdmin.
+
+Durante el proceso se logró:
+
+- La conexión correcta entre el backend y la base de datos remota en Neon, verificada mediante los logs de Spring Boot.
+- La ejecución automática de migraciones mediante Flyway al iniciar el backend, confirmando que la base de datos fue inicializada correctamente en Neon.
+- La exposición de puertos y ejecución en segundo plano usando docker compose up -d, lo cual permitió el acceso a la API en el puerto 8082 y al frontend en el puerto 5173.
+- La visualización en el frontend de una tabla con datos consumidos desde la API REST del backend, validando la comunicación entre ambos contenedores.
+- La configuración centralizada mediante un archivo .env, lo cual facilitó la gestión de variables sensibles como las credenciales de la base de datos y las URLs de conexión.
+Todo el proceso fue documentado y acompañado de evidencias, desde la construcción de imágenes hasta la correcta visualización de los datos en el navegador, demostrando el despliegue completo de una aplicación web distribuida y contenerizada.
 
 <img src="./back/resultado.PNG" alt="contenedor react docker" width="500"/>
 
