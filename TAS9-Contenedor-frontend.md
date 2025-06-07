@@ -28,6 +28,11 @@ Para lenguajes compilados, como C, Go o Rust, las compilaciones multietapa permi
 
 <img src="./back/multi.jpeg" alt="contenedor react docker" width="500"/>
 
+
+### ¿Qué es la contenerización?
+
+La contenerización permite a los desarrolladores crear e implementar aplicaciones de forma más rápida y segura. Con los métodos tradicionales, los desarrolladores escriben código en un entorno informático específico que, cuando se traslada a una nueva ubicación, suele dar lugar a fallos y errores. Por ejemplo, esto puede ocurrir cuando un desarrollador transfiere código de un ordenador de sobremesa a una máquina virtual o de un sistema operativo Linux a uno Windows. La contenerización elimina este problema al agrupar el código de la aplicación con los archivos de configuración, las bibliotecas y las dependencias relacionadas necesarias para que se ejecute. Este único paquete de software o "contenedor" se abstrae del sistema operativo anfitrión. Por lo tanto, es independiente y se vuelve portátil, capaz de ejecutarse en cualquier plataforma o nube, sin problemas.
+
 ## 4. Conocimientos previos
 
 El estudiante debe conocer:
