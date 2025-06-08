@@ -14,7 +14,7 @@ Un contenedor Docker tiene una vida limitada e interactúa con su entorno. Imagi
 
 Dockerfile es un archivo de texto totalmente normal. El Dockerfile contiene un conjunto de instrucciones, cada una en una línea distinta. Para crear una Docker Image, las instrucciones se ejecutan una tras otra. Quizás te suene este esquema de la ejecución de un script por lotes. Durante la ejecución, se añaden paso por paso más capas a la imagen.  Una imagen Docker se crea ejecutando las instrucciones de un Dockerfile. Este paso se conoce como el proceso build y empieza con la ejecución del comando “docker build”. El contexto de construcción es un concepto crucial: define a qué archivos y directorios tiene acceso el proceso de construcción, donde un directorio local hace las veces de fuente. El contenido del directorio fuente se transfiere al Docker Daemon al accionar “docker build”. Las instrucciones contenidas en el Dockerfile reciben acceso a los archivos y directorios contenidos en el contexto de construcción (¿Qué Es El Dockerfile? - IONOS, n.d.).
 
-<img src="./back/dfile.jpeg" alt="contenedor react docker" width="500"/>
+<img src="./front/dfile.jpeg" alt="contenedor react docker" width="500"/>
 
 
 ### Multi-stage buils
@@ -26,14 +26,14 @@ Las compilaciones multietapa introducen varias etapas en tu Dockerfile, cada una
 Se recomiendan compilaciones de varias etapas para todo tipo de aplicaciones. Para lenguajes interpretados, como JavaScript, Ruby o Python, puedes compilar y minimizar tu código en una sola etapa y copiar los archivos listos para producción a una imagen de tiempo de ejecución más pequeña. Esto optimiza tu imagen para la implementación.
 Para lenguajes compilados, como C, Go o Rust, las compilaciones multietapa permiten compilar en una sola etapa y copiar los binarios compilados en una imagen de ejecución final. No es necesario incluir todo el compilador en la imagen final.(Compilaciones Multietapa | Documentación de Docker, n.d.)
 
-<img src="./back/multi.jpeg" alt="contenedor react docker" width="500"/>
+<img src="./front/multi.jpeg" alt="contenedor react docker" width="500"/>
 
 
 ### ¿Qué es la contenerización?
 
 La contenerización permite a los desarrolladores crear e implementar aplicaciones de forma más rápida y segura. Con los métodos tradicionales, los desarrolladores escriben código en un entorno informático específico que, cuando se traslada a una nueva ubicación, suele dar lugar a fallos y errores. Por ejemplo, esto puede ocurrir cuando un desarrollador transfiere código de un ordenador de sobremesa a una máquina virtual o de un sistema operativo Linux a uno Windows. La contenerización elimina este problema al agrupar el código de la aplicación con los archivos de configuración, las bibliotecas y las dependencias relacionadas necesarias para que se ejecute. Este único paquete de software o "contenedor" se abstrae del sistema operativo anfitrión. Por lo tanto, es independiente y se vuelve portátil, capaz de ejecutarse en cualquier plataforma o nube, sin problemas.(¿Qué Es La Contenerización? | IBM, n.d.)
 
-<img src="./back/multi.jpeg" alt="contenedor react docker" width="500"/>
+<img src="./front/con1.jpeg" alt="contenedor react docker" width="500"/>
 
 
 
@@ -80,25 +80,25 @@ El estudiante debe conocer:
 
 Figura 8-1 Creacion del Dockerfile en spring boot.
 
-<img src="./back/c1.PNG" alt="contenedor react docker" width="500"/>
+<img src="./front/dfb.PNG" alt="contenedor react docker" width="500"/>
 
 2.  Crear el Dockerfile para el frontend.
 
 Figura 8-2 Creacion del Dockerfile en React.
 
-<img src="./back/c2.PNG" alt="contenedor react docker" width="500"/>
+<img src="./front/dff.PNG" alt="contenedor react docker" width="500"/>
 
 3.Crear el archivo .env.
 
 Figura 8-3 Creacion del archivo .env para variables de entorno .
 
-<img src="./back/c3.PNG" alt="contenedor react docker" width="500"/>
+<img src="./front/en.PNG" alt="contenedor react docker" width="500"/>
 
 4. Crear el archivo docker-compose.yml para orquestar los contenedores.
 
 Figura 8-4 Estructura de docker-compose.
 
-<img src="./back/c4.PNG" alt="contenedor react docker" width="500"/>
+<img src="./front/dc.PNG" alt="contenedor react docker" width="500"/>
 
 5. Ejecutar los contenedores 
 Figura 8-5 Ejecucion de los contenedores.
