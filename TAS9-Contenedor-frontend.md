@@ -103,7 +103,7 @@ Figura 8-4 Estructura de docker-compose.
 5. Ejecutar los contenedores 
 Figura 8-5 Ejecucion de los contenedores.
 
-<img src="./back/c5.PNG" alt="contenedor react docker" width="500"/>
+<img src="./front/r1.PNG" alt="contenedor react docker" width="500"/>
 
 
 ## 9. Resultados esperados
@@ -119,7 +119,10 @@ Durante el proceso se logró:
 - La configuración centralizada mediante un archivo .env, lo cual facilitó la gestión de variables sensibles como las credenciales de la base de datos y las URLs de conexión.
 Todo el proceso fue documentado y acompañado de evidencias, desde la construcción de imágenes hasta la correcta visualización de los datos en el navegador, demostrando el despliegue completo de una aplicación web distribuida y contenerizada.
 
-<img src="./back/resultado.PNG" alt="contenedor react docker" width="500"/>
+<img src="./front/r2.PNG" alt="contenedor react docker" width="500"/>
+
+<img src="./front/r3.PNG" alt="contenedor react docker" width="500"/>
+
 
 
 ## 10. Bibliografía
